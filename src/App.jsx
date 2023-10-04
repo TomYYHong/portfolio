@@ -7,14 +7,18 @@ function App() {
 
   return (
     <>
-      <div className="top">
-        <img src={self_logo} className="logo self" alt="Self logo" />
-        <p className='name'>Tom Hong</p>
-      </div>
+    <div className='topelements'>
+        <div className="top">
+          <img src={self_logo} className="logo self" alt="Self logo" />
+          <p className='name'>Tom Hong</p>
+        </div>
+    </div>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        {/* <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
-        </button>
+        </button> */
+        
+        }
         <p>
            <code>code part</code> 
         </p>
