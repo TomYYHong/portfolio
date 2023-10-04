@@ -7,6 +7,7 @@ function App() {
 
   return (
     <>
+    <div className='banner'>
     <div className='topelements'>
         <div className="top">
           <img src={self_logo} className="logo self" alt="Self logo" />
@@ -23,6 +24,7 @@ function App() {
            <code>code part</code> 
         </p>
       </div>
+    </div>
     </>
   )
 }
