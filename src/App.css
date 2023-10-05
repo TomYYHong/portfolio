@@ -31,12 +31,14 @@
   display: flex;
   justify-content: center;
   /* align-content:center; */
+  max-height: fit-content;
 }
 
 .name {
   animation: nameAnimation ease 5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  max-height: fit-content;
   
 }
 
@@ -50,6 +52,10 @@
   animation: logoAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  height: 10em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
 }
 /* .logo:hover {
   filter: drop-shadow(0 0 2em #b7ff64aa);
@@ -90,12 +96,12 @@
 
 @keyframes nameAnimation  {
   from {
-    font-size: 4em; 
+    font-size: 2em; 
     color: rgb(rgb(0, 223, 193), green, blue);
     transition: all 0.5s ease-in-out; 
   }
   to {
-    font-size: 4.5em; 
+    font-size: 3.5em; 
     transform: scale(1.2);
     filter:drop-shadow(0 0mm 4mm rgb(3, 50, 94)) brightness(10);
   }
@@ -104,17 +110,25 @@
 
 @keyframes logoAnimation  {
   from {
-    height: 10em;
-    padding: 1.5em;
     will-change: filter;
     transition: filter 300ms;
   }
   to {
-    height: 10em;
-    padding: 1.5em;
+    height: 5em;
     will-change: filter;
     transition: filter 300ms;
     filter: drop-shadow(0 0 2em #b7ff64aa);
   }
 
 }
+
+@media only screen and (max-width: 600px) {
+  .name {
+    font-size: 10px;
+  }
+  .logo {
+    height: 10px;
+  }
+}
+
+/* https://stackoverflow.com/questions/20407906/defining-keyframe-animations-inside-media-queries */
