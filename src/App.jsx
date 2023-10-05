@@ -11,9 +11,10 @@ function App() {
     <div className='topelements'>
         <div className="top">
           <img src={self_logo} className="logo self" alt="Self logo" />
-          <p className='name'>Tom Hong</p>
+          <p className='name'>Tom Hong</p> <br />
         </div>
         <div className='self-intro'>
+        <p> Software developer</p>
         </div>
     </div>
     </div>
