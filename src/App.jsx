@@ -13,8 +13,12 @@ function App() {
           <img src={self_logo} className="logo self" alt="Self logo" />
           <p className='name'>Tom Hong</p>
         </div>
+        <div className='self-intro'>
+        </div>
     </div>
-      <div className="card">
+    </div>
+    <div className='tech_stack'>
+        <div className="card">
         {/* <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button> */
@@ -23,8 +27,9 @@ function App() {
         <p>
            <code>code part</code> 
         </p>
+        </div>
       </div>
-    </div>
+   
     </>
   )
 }

@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+  max-width: 2000px;
   width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
@@ -8,7 +8,7 @@
 }
 
 .topelements {
-  max-width: 1000px;
+  max-width: 1500px;
   /* width: 150em; */
 }
 
@@ -46,9 +46,15 @@
 .logo:hover {
   filter: drop-shadow(0 0 2em #b7ff64aa);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.tech_stack {
+  height: 10em;
+  width: 100%;
+  background-color: dimgrey;
 }
+/* .logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+} */
 
 /* @keyframes logo-spin {
   from {
