@@ -1,0 +1,208 @@
+#root {
+  max-width: 2000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+
+  /* background-color:dimgray; */
+}
+
+body {
+  background-color:  rgb(29, 28, 28);
+}
+
+.left {
+  height: fit-content;
+}
+
+.right{
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 70%;
+  
+}
+
+.topelements {
+  max-width: 1500px;
+  display: flex;
+  /* justify-content: center; */
+  /* width: 150em; */
+}
+
+.banner {
+  background-color: dimgray;
+  background-image: url('../assets/bg2.jpg');
+  border-radius: 20px 20px;
+  height: fit-content;
+  /* the banner should fit the height change for responsive change */
+  box-shadow: rgba(194, 191, 191, 0.918) 0px 20px 30px -10px, rgb(250, 237, 56) 0px 20px 30px -20px, rgb(128, 169, 245) 0px -2px 6px 0px inset;
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  /* width: 80%; */
+  margin: 10px 20px 0 20px;
+  justify-content: space-around;
+}
+
+.self-intro {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-content:center; */
+  max-height: fit-content;
+  width: fit-content;
+  color: aliceblue;
+  text-align: left;
+  font-family: sans-serif;
+}
+
+.name {
+  max-height: fit-content; 
+  justify-content: left;
+}
+
+
+.logo {
+  animation: logoAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  height: 10em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  align-self: center;
+  margin: 0 20px 0 0;
+}
+/* .logo:hover {
+  filter: drop-shadow(0 0 2em #b7ff64aa);
+} */
+
+.tech_stack {
+  height: 10em;
+  width: 100%;
+  background-color: dimgrey;
+  margin: 10px auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+@keyframes nameAnimationLess  {
+  from {
+    font-size: 1em; 
+    color: rgb(rgb(0, 223, 193), green, blue);
+    transition: all 0.5s ease-in-out; 
+  }
+  to {
+    font-size: 2em; 
+    transform: scale(1.2);
+    filter:drop-shadow(0 0mm 4mm rgb(3, 50, 94)) brightness(20);
+    align-self: center;
+    padding: 5%;
+  }
+
+}
+
+@keyframes nameAnimationMore  {
+  from {
+    font-size: 2em; 
+    color: rgb(rgb(0, 223, 193), green, blue);
+    transition: all 0.5s ease-in-out; 
+  }
+  to {
+    font-size: 3.5em; 
+    transform: scale(1.2);
+    filter:drop-shadow(0 0mm 4mm rgb(3, 50, 94)) brightness(10);
+  }
+
+}
+
+@keyframes logoAnimation  {
+  from {
+    /* will-change: filter;
+    transition: filter 300ms; */
+  }
+  to {
+    /* height: 5em; */
+    /* will-change: filter;
+    transition: filter 300ms; */
+    filter: drop-shadow(0 0 2em #b7ff64aa);
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .name {
+    /* font-size: 10px; */
+    animation: nameAnimationLess 2s forwards;
+    margin: 10px 20px 0 0;
+  }
+  .logo {
+    height: 5em;
+    align-self: center;
+  }
+  .top {
+    justify-content: center;
+  }
+
+  .self-intro{
+    align-self: center;
+  }
+
+  .banner {
+    align-content: left;
+  }
+
+  .left .right {
+    align-self: center;
+  }
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  .name {
+    /* font-size: 10px; */
+    animation: nameAnimationLess 2s forwards;
+    margin: 10px 20px 0 0;
+  }
+  .logo {
+    height: 10em;
+  }
+  .self-intro {
+    align-self: center;
+    text-align: center;
+  }
+
+  .top {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .name {
+    /* font-size: 10px; */
+    animation: nameAnimationMore 3s forwards;
+    margin: auto auto 0 auto;
+  }
+}
+
+
+
+
