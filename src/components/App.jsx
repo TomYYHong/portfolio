@@ -1,9 +1,9 @@
 import '../css/App.css'
 import '../css/tech_stack.css'
 import '../css/project.css'
-import Intro from './intro';
-import TechStack from './techStack';
 import Project  from './project'
+import Home from './home'
+import NavBar from './Navbar/navBar'
 
 
 function App() {
@@ -11,9 +11,8 @@ function App() {
 
   return (
     <>
-    {/* <Navbar /> */}
-    <Intro />
-    <TechStack />
+    <NavBar />
+    <Home />
     <Project />
     </>
   )

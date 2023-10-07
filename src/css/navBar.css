@@ -1,0 +1,31 @@
+.Container {
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+}
+
+.left-navbar{
+    align-self:self-start;
+}
+
+#basic-navbar-nav {
+    display: flex;
+    align-self: flex-end;
+    flex-wrap: nowrap;
+    width: fit-content;
+    justify-content: space-evenly;
+}
+
+.right-navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: fit-content;
+    justify-content: space-evenly;
+    text-align: right;
+}
+
+.nav-link {
+    margin: 5px 10px 5px 10px;
+}

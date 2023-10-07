@@ -5,7 +5,7 @@ export default function Project() {
         <div className='project_container'>
         <div className="project_card">
           <div className="project_title">
-            TEST
+            Coming soon
           </div>
           <div className="project_image">
           </div>

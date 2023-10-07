@@ -3,7 +3,7 @@ import self_logo from '../assets/hello.png'
 
 export default function Intro() {
     return ( 
-        <div className='banner'>
+        <div className='banner' id="intro">
         <div className='topelements'>
             <div className="top">
               <div classname='left'>
