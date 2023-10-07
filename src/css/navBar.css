@@ -5,6 +5,15 @@
     width: inherit;
 }
 
+.bg-body-tertiary {
+    position: sticky;
+    top:  10px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    margin-top: 0;
+    width: 100%;
+}
+
 .left-navbar{
     align-self:self-start;
 }
