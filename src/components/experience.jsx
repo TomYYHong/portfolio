@@ -18,7 +18,7 @@ export default function Experience() {
     </div>
     <div className="timeline-container timeline-right">
       <div className="timeline-content">
-        <h2>2016</h2>
+        <h2>2020</h2>
         <p>Gradurated from Computer Science bachelor degree</p>
       </div>
     </div>

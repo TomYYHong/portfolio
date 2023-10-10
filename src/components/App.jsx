@@ -8,12 +8,15 @@ import NavBar from './Navbar/navBar'
 import TechStack from './techStack'
 import Footer from './footer'
 import ContactForm from './form'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
   // const [count, setCount] = useState(10)
 
   return (
     <>
+    <a href='#top' className="toTopBtn"><button><FontAwesomeIcon icon={faArrowUp}> Top </FontAwesomeIcon></button></a>
     <NavBar />
     <Home />
     <Experience />
@@ -22,6 +25,7 @@ function App() {
     <ContactForm />
     <Footer />
     </>
+    
   )
 }
 
