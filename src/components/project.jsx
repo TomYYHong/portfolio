@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Project() {
     return ( 
-        <div className='project_container'>
+        <div className='project_container' id="project">
         <div className="project_card">
           <div className="project_title">
             Coming soon

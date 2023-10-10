@@ -5,8 +5,9 @@ import Project  from './project'
 import Experience  from './experience'
 import Home from './home'
 import NavBar from './Navbar/navBar'
-import TechStack from './techStack';
-
+import TechStack from './techStack'
+import Footer from './footer'
+import ContactForm from './form'
 
 function App() {
   // const [count, setCount] = useState(10)
@@ -18,6 +19,8 @@ function App() {
     <Experience />
     <TechStack />
     <Project />
+    <ContactForm />
+    <Footer />
     </>
   )
 }

@@ -1,0 +1,20 @@
+footer { 
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+background: rgba(0, 79, 224, 0.548);
+opacity: 0.9;
+backdrop-filter: blur(30px);
+width: auto ;
+} 
+
+footer p {
+  color:  #646cff;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.right-contact {
+    justify-self: end;
+}

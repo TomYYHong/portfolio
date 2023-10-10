@@ -3,7 +3,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../../css/navBar.css'
-import intro from '../intro.jsx'
 import logo from '../../assets/logo.png'
 
 function NavBar() {
@@ -14,8 +13,8 @@ function NavBar() {
         {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="right-navbar">
-            <Nav.Link href="#banner">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
+            <Nav.Link href="#experience">Experience</Nav.Link>
+            <Nav.Link href="#project">Projects</Nav.Link>
             {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">

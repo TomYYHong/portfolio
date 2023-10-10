@@ -6,7 +6,7 @@ export default function Intro() {
         <div className='banner' id="intro">
         <div className='topelements'>
             <div className="top">
-              <div classname='left'>
+              <div className='left'>
               <img src={self_logo} className="logo self" alt="Self logo" />
              </div>
              <div className = 'right'>
